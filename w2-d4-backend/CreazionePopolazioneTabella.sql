@@ -1,0 +1,62 @@
+--CREATE TABLE Impiegato (
+--IDImpiegato INT PRIMARY KEY IDENTITY,
+--Nome NVARCHAR(50) NOT NULL,
+--Cognome NVARCHAR(50) NOT NULL,
+--CodiceFiscale NVARCHAR(16) UNIQUE NOT NULL,
+--Eta SMALLINT NOT NULL,
+--RedditoMensile MONEY NOT NULL,
+--DetrazioneFIscale BIT NOT NULL,
+--);
+
+--CREATE TABLE Impiego (
+--IDImpiego INT PRIMARY KEY IDENTITY,
+--TipoImpiego NVARCHAR(50) NOT NULL,
+--DataAssunzione DATE NOT NULL,
+--IDImpiegato INT NOT NULL,
+--FOREIGN KEY (IDImpiegato) REFERENCES Impiegato(IDImpiegato)
+--);
+
+--INSERT INTO Impiegato (Nome,Cognome,CodiceFiscale,Eta,RedditoMensile,DetrazioneFIscale) 
+--VALUES('Mario', 'Rossi', 'RSSMRA90A01H501A', 30, 2500.00, 200.00),
+--('Luca', 'Bianchi', 'BNCLCU88B02H501A', 28, 2700.00, 180.00),
+--('Giulia', 'Verdi', 'VRDGLI85C03H501A', 35, 3000.00, 250.00),
+--('Laura', 'Neri', 'NRLLRA83D04H501A', 33, 2800.00, 220.00),
+--('Paolo', 'Gialli', 'GLLPLO80E05H501A', 40, 3200.00, 300.00),
+--('Anna', 'Marroni', 'MRNNNA78F06H501A', 45, 3500.00, 280.00),
+--('Simone', 'Rosa', 'RSASMN75G07H501A', 38, 2900.00, 240.00),
+--('Sara', 'Azzurri', 'ZZRSRA70H08H501A', 42, 3300.00, 270.00),
+--('Alessandro', 'Viola', 'VLLLSN68I09H501A', 48, 3600.00, 320.00),
+--('Martina', 'Arancioni', 'RNNMRT65L10H501A', 37, 3000.00, 250.00),
+--('Davide', 'Giallorossi', 'GLRDDV63M11H501A', 41, 3400.00, 280.00),
+--('Elisa', 'Celesti', 'CLSELS60N12H501A', 50, 3700.00, 300.00),
+--('Marco', 'Fucsia', 'FCUMRC58O13H501A', 39, 3100.00, 260.00),
+--('Francesca', 'Turchesi', 'TRCFNC55P14H501A', 43, 3500.00, 290.00),
+--('Giovanni', 'Indaco', 'NDGGVN53Q15H501A', 52, 3800.00, 310.00),
+--('Valentina', 'Malva', 'MLTVLN50R16H501A', 36, 3200.00, 270.00),
+--('Andrea', 'Lilla', 'LLNDRR48S17H501A', 46, 3600.00, 300.00),
+--('Chiara', 'Bordeaux', 'BRDCHR45T18H501A', 53, 3900.00, 320.00),
+--('Roberto', 'Grigio', 'GRBRRT43U19H501A', 35, 3300.00, 280.00),
+--('Elena', 'Beige', 'BGLNLN40V20H501A', 47, 3700.00, 310.00);
+
+
+--INSERT INTO Impiego (TipoImpiego,DataAssunzione,IDImpiegato)
+--VALUES ('Sviluppatore', '2023-01-01', 1),
+--('Analista', '2023-02-15', 2),
+--('Grafico', '2023-03-10', 3),
+--('Progettista', '2023-04-20', 4),
+--('Manager', '2023-05-05', 5),
+--('Amministratore', '2023-06-12', 6),
+--('Sviluppatore', '2023-07-18', 7),
+--('Analista', '2023-08-24', 8),
+--('Grafico', '2023-09-30', 9),
+--('Progettista', '2023-10-05', 10),
+--('Manager', '2023-11-15', 11),
+--('Amministratore', '2023-12-20', 12),
+--('Sviluppatore', '2024-01-10', 13),
+--('Analista', '2024-02-25', 14),
+--('Grafico', '2024-03-03', 15),
+--('Progettista', '2024-04-08', 16),
+--('Manager', '2024-05-16', 17),
+--('Amministratore', '2024-06-22', 18),
+--'Sviluppatore', '2024-07-30', 19),
+--('Analista', '2024-08-05', 20);
